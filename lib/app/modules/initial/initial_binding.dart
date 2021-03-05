@@ -6,5 +6,4 @@ class InitialBinding implements Bindings {
   void dependencies() {
     Get.lazyPut<InitialController>(() => InitialController());
   }
-
 }
