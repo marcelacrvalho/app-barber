@@ -22,7 +22,7 @@ class InitialView extends GetView<InitialController> {
           Divider(height: Get.mediaQuery.size.height * 0.1),
           Container(
             width: double.infinity,
-            height: IMAGESIZE,
+            height: BIGIMAGESIZE,
             child: Image.asset('assets/images/bg.png', fit: BoxFit.contain),
           ),
           RichTextWidget(
