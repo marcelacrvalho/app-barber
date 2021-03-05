@@ -8,6 +8,7 @@ final ThemeData appThemeData = ThemeData(
   scaffoldBackgroundColor: Colors.white,
   dividerColor: Colors.transparent,
   shadowColor: Colors.black,
+  splashColor: Colors.blue[300],
   appBarTheme: AppBarTheme(
     color: Colors.yellow,
   ),
