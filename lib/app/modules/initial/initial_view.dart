@@ -35,7 +35,7 @@ class InitialView extends GetView<InitialController> {
             child: Align(
               alignment: Alignment.bottomCenter,
               child: RaisedButtonWidget(
-                onTap: (){},
+                onTap: () => Get.toNamed('/login'),
                 width: double.infinity,
                 heigh: BIGBUTTONSIZE,
                 buttonColor: Colors.blue[700],
