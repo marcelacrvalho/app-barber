@@ -20,7 +20,8 @@ class LoginView extends GetView<LoginController> {
         ),
         TextFormFieldWidget(
           controller: controller.passwordController,
-          hintText: 'Seu e-mail',
+          hintText: 'Sua senha',
+          obscureText: true,
         ),
       ],
     );
