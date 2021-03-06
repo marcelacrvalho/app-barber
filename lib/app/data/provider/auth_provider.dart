@@ -24,4 +24,23 @@ class AuthApiClient {
       print(error);
     }
   }
+
+  Future<Map<String, dynamic>> register (String username, String email, String password) async {
+    try {
+      Map params = {'username': username, 'email': email, 'password': password};
+      var response = await http.post(
+        BASEURL + '/auth/register',
+        body: params,
+        headers: DEFAULTHEADERS,
+      );
+      if (response.statusCode == 200) {
+        return json.decode(response.body);
+      } else {
+        print(response.statusCode);
+      }
+      return null;
+    } catch (error) {
+      print(error);
+    }
+  }
 }

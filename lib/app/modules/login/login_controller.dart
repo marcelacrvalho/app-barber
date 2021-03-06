@@ -3,11 +3,14 @@ import 'package:get/get.dart';
 
 class LoginController extends GetxController {
 
-  TabController tabController;
-  TextEditingController emailController;
-  TextEditingController passwordController;
-  final RxInt _tabPosition = 1.obs;
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
-  set tabPosition(value) => _tabPosition.value = value;
+  void onClickLogin() {
 
+  }
+
+  void onClickRegister() {
+
+  }
 }

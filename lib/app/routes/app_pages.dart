@@ -2,6 +2,8 @@ import 'package:barber/app/modules/initial/initial_binding.dart';
 import 'package:barber/app/modules/initial/initial_view.dart';
 import 'package:barber/app/modules/login/login_binding.dart';
 import 'package:barber/app/modules/login/login_view.dart';
+import 'package:barber/app/modules/register/register_binding.dart';
+import 'package:barber/app/modules/register/register_view.dart';
 import 'package:barber/app/routes/app_routes.dart';
 import 'package:get/get.dart';
 
@@ -19,6 +21,11 @@ class AppPages {
       name: Routes.LOGIN,
       page: () => LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: Routes.REGISTER,
+      page: () => RegisterView(),
+      binding: RegisterBinding(),
     ),
   ];
 }

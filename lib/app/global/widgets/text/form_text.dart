@@ -23,11 +23,17 @@ class TextFormFieldWidget extends StatelessWidget {
       keyboardType: this.keyboardType,
       obscureText: this.obscureText,
       style: TextStyle(
-        color: appThemeData.primaryColorDark,
+        color: appThemeData.shadowColor,
         fontSize: TEXTFONTSIZE,
       ),
       decoration: InputDecoration(
         hintText: this.hintText,
+        border: OutlineInputBorder(),
+        enabledBorder: OutlineInputBorder(),
+        hintStyle: TextStyle(
+          color: appThemeData.primaryColorDark,
+          fontSize: TEXTFONTSIZE,
+        ),
       ),
     );
   }

@@ -7,5 +7,9 @@ class AuthRepository {
   Future<Auth> login (String email, String password) async {
     return Auth.fromJson(await apiClient.login(email, password));
   }
+
+  Future<Auth> register (String username, String email, String password) async {
+    return Auth.fromJson(await apiClient.register(username, email, password));
+  }
 }
 

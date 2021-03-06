@@ -2,6 +2,7 @@ import 'package:barber/app/data/helpers/sizes_helpers.dart';
 import 'package:barber/app/global/widgets/button/raised_button.dart';
 import 'package:barber/app/global/widgets/text/rich_text.dart';
 import 'package:barber/app/modules/initial/initial_controller.dart';
+import 'package:barber/app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -29,7 +30,7 @@ class InitialView extends GetView<InitialController> {
               firsText: 'BARBER ',
               secondText: 'SHOP',
               fontSize: TITLEFONTSIZE,
-              firstTextColor: Colors.blue[700],
+              firstTextColor: appThemeData.primaryColor,
           ),
           Expanded(
             child: Align(
@@ -38,7 +39,7 @@ class InitialView extends GetView<InitialController> {
                 onTap: () => Get.toNamed('/login'),
                 width: double.infinity,
                 heigh: BIGBUTTONSIZE,
-                buttonColor: Colors.blue[700],
+                buttonColor: appThemeData.buttonColor,
                 buttonText: 'VAMOS LÁ',
                 isBold: true,
               ),
