@@ -3,14 +3,14 @@ import 'package:get/get.dart';
 
 class LoginController extends GetxController {
 
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   void onClickLogin() {
 
   }
 
   void onClickRegister() {
-
+    Get.toNamed('/register');
   }
 }

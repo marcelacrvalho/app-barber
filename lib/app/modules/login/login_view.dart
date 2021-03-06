@@ -53,7 +53,7 @@ class LoginView extends GetView<LoginController> {
               ),
               Divider(),
               FlatButtonWidget(
-                onTap: () {},
+                onTap: controller.onClickRegister,
                 buttonText: 'Ainda não possui uma conta? Registre-se',
                 isBold: true,
               ),
